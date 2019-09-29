@@ -37,16 +37,17 @@ Firstly, he chooses the language as English to specify the area, then selects th
 4. Secret sauce
 
 We find lots of paper and information about the same or related topic and we make the comparison between their and ours.
-
+![pic1](https://github.com/INF554/a2-Kellyxinyz/blob/master/world_map.png)
 
 5. What is your plan
 
 We want to divide our website into 2 parts. The first part is the general which is used for most of people then the second part is for someone who wants to make some trending video and want to follow the world's trending.
-We are going to use the dataset which comes from Kaggle: 
+We are going to use the dataset which comes from Kaggle: https://www.kaggle.com/datasnaek/youtube
 
 The risks would happen as following: The rows of dataset might be not enough
 
 All of team members would have a face to face meeting and for each person would pick 1-2 topic to finish and then combine them togher.
 
 6. Timeline
+![pic2](https://github.com/INF554/a2-Kellyxinyz/blob/master/world_map.png)
 

@@ -49,5 +49,5 @@ The risks would happen as following: The rows of dataset might be not enough
 All of team members would have a face to face meeting and for each person would pick 1-2 topic to finish and then combine them togher.
 
 6. Timeline
-![pic2](https://github.com/INF554/a5-tripley/blob/master/comparison.png)
+![pic2](https://github.com/INF554/a5-tripley/blob/master/timeline.png)
 

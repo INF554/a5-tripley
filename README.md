@@ -41,14 +41,16 @@ We find lots of paper and information about the same or related topic and we mak
 
 5. What is your plan
 
+![pic2](https://github.com/INF554/a5-tripley/blob/master/plan.png)
+
 We want to divide our website into 2 parts. The first part is the general which is used for most of people then the second part is for someone who wants to make some trending video and want to follow the world's trending.
 We are going to use the dataset which comes from Kaggle: https://www.kaggle.com/datasnaek/youtube
 
 The risks would happen as following: The rows of dataset might be not enough
 
 All of team members would have a face to face meeting and for each person would pick 1-2 topic to finish and then combine them togher.
-![pic2](https://github.com/INF554/a5-tripley/blob/master/howtoworktogether.png)
+![pic3](https://github.com/INF554/a5-tripley/blob/master/howtoworktogether.png)
 
 6. Timeline
-![pic3](https://github.com/INF554/a5-tripley/blob/master/timeline.png)
+![pic4](https://github.com/INF554/a5-tripley/blob/master/timeline.png)
 

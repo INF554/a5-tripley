@@ -37,7 +37,7 @@ Firstly, he chooses the language as English to specify the area, then selects th
 4. Secret sauce
 
 We find lots of paper and information about the same or related topic and we make the comparison between their and ours.
-![pic1](https://github.com/INF554/a2-Kellyxinyz/blob/master/world_map.png)
+![pic1](https://github.com/INF554/a5-tripley/blob/master/comparison.png)
 
 5. What is your plan
 
@@ -49,5 +49,5 @@ The risks would happen as following: The rows of dataset might be not enough
 All of team members would have a face to face meeting and for each person would pick 1-2 topic to finish and then combine them togher.
 
 6. Timeline
-![pic2](https://github.com/INF554/a2-Kellyxinyz/blob/master/world_map.png)
+![pic2](https://github.com/INF554/a5-tripley/blob/master/comparsion.png)
 

@@ -381,10 +381,10 @@
       },
       "cameraStates": {
         "Artboard": {
-          "cx": 4593.572871393658,
-          "cy": 3325.696130203772,
-          "width": 753.0152914275761,
-          "height": 564.7614685706822,
+          "cx": 4593.697871393658,
+          "cy": 3325.493005203772,
+          "width": 753.4858995504875,
+          "height": 562.228973480766,
           "opacity": 1,
           "angle": 0,
           "clipped": true,
@@ -409,10 +409,10 @@
       },
       "cameraOffsets": {
         "Artboard": {
-          "deltaX": 144.5025588936578,
-          "deltaY": -96.8038697962279,
-          "widthFactor": 1.8818766313157433,
-          "heightFactor": 6.26642406181062,
+          "deltaX": 144.6275588936578,
+          "deltaY": -96.7257447962279,
+          "widthFactor": 1.8830527381479636,
+          "heightFactor": 6.22106747973185,
           "deltaAngle": 0
         }
       }
@@ -517,21 +517,21 @@
       },
       "cameraStates": {
         "Artboard": {
-          "cx": 4553.727247198946,
-          "cy": 2959.014537916089,
-          "width": 872.2196511877282,
-          "height": 654.1647383907962,
+          "cx": 4557.932416074036,
+          "cy": 2960.1662608744523,
+          "width": 872.8995280491536,
+          "height": 651.231342470278,
           "opacity": 1,
           "angle": 0,
           "clipped": true,
           "clipXOffset": 0,
           "clipYOffset": 0,
-          "clipWidthFactor": 0.9964025979168953,
+          "clipWidthFactor": 0.9962726191715097,
           "clipHeightFactor": 0.7479061976549348
         },
         "__sozi_auto__": {
-          "cx": 4553.664880176335,
-          "cy": 2959.17078791609,
+          "cx": 4557.712523174785,
+          "cy": 2960.5200022489066,
           "width": 868.8940303339775,
           "height": 651.6705227504832,
           "opacity": 1,
@@ -540,15 +540,15 @@
           "clipXOffset": 0,
           "clipYOffset": 0,
           "clipWidthFactor": 0.9999999999999925,
-          "clipHeightFactor": 0.7479061976549357
+          "clipHeightFactor": 0.7479061976549356
         }
       },
       "cameraOffsets": {
         "Artboard": {
-          "deltaX": 191.96162219894632,
-          "deltaY": 3.5145379160890116,
-          "widthFactor": 2.011895685000166,
-          "heightFactor": 7.258415959953355,
+          "deltaX": 196.16679107403615,
+          "deltaY": 4.947510874452291,
+          "widthFactor": 2.0134639153444036,
+          "heightFactor": 7.205879308108194,
           "deltaAngle": 0
         }
       }
@@ -611,15 +611,7 @@
           "clipHeightFactor": 0.7479061976549334
         }
       },
-      "cameraOffsets": {
-        "Artboard": {
-          "deltaX": -11.866390704136393,
-          "deltaY": -5.059066063709906,
-          "widthFactor": 0.98931759475005,
-          "heightFactor": 1.1808766281631136,
-          "deltaAngle": 0
-        }
-      }
+      "cameraOffsets": {}
     },
     {
       "frameId": "frame4412",
@@ -634,8 +626,8 @@
       "layerProperties": {
         "Artboard": {
           "link": false,
-          "referenceElementId": "timeline",
-          "outlineElementId": "timeline",
+          "referenceElementId": "INF554-Project-Slides",
+          "outlineElementId": "INF554-Project-Slides",
           "outlineElementAuto": true,
           "transitionTimingFunction": "easeOut",
           "transitionRelativeZoom": 0.6,
@@ -644,7 +636,7 @@
         "__sozi_auto__": {
           "link": false,
           "referenceElementId": "",
-          "outlineElementId": "timeline",
+          "outlineElementId": "INF554-Project-Slides",
           "outlineElementAuto": true,
           "transitionTimingFunction": "easeOut",
           "transitionRelativeZoom": 0.6,
@@ -653,46 +645,38 @@
       },
       "cameraStates": {
         "Artboard": {
-          "cx": 959.9467787203239,
-          "cy": 3022.704810850978,
-          "width": 1437.1848469185843,
-          "height": 1077.8886351889382,
+          "cx": 1000.329730144008,
+          "cy": 3044.709579367712,
+          "width": 1637.962391328908,
+          "height": 1228.4717934966811,
           "opacity": 1,
           "angle": 0,
           "clipped": true,
           "clipXOffset": 0,
           "clipYOffset": 0,
-          "clipWidthFactor": 0.9999999999999833,
-          "clipHeightFactor": 0.7479061976549305
+          "clipWidthFactor": 0.9999999999999818,
+          "clipHeightFactor": 0.7479061976549295
         },
         "__sozi_auto__": {
-          "cx": 959.9467787203316,
-          "cy": 3022.704810850979,
-          "width": 1437.1848469185818,
-          "height": 1077.8886351889364,
+          "cx": 1000.3297301440155,
+          "cy": 3044.709579367713,
+          "width": 1637.9623913289047,
+          "height": 1228.4717934966786,
           "opacity": 1,
           "angle": 0,
           "clipped": true,
           "clipXOffset": 0,
           "clipYOffset": 0,
-          "clipWidthFactor": 0.999999999999984,
-          "clipHeightFactor": 0.7479061976549314
+          "clipWidthFactor": 0.9999999999999829,
+          "clipHeightFactor": 0.7479061976549308
         }
       },
-      "cameraOffsets": {
-        "Artboard": {
-          "deltaX": -41.05322127967611,
-          "deltaY": -19.295189149022008,
-          "widthFactor": 0.9027543008282565,
-          "heightFactor": 1.3541314512423848,
-          "deltaAngle": 0
-        }
-      }
+      "cameraOffsets": {}
     }
   ],
   "elementsToHide": [],
   "selectedFrames": [
-    "frame4412"
+    "frame4417"
   ],
   "selectedLayers": [
     "Artboard",

@@ -381,10 +381,10 @@
       },
       "cameraStates": {
         "Artboard": {
-          "cx": 4593.697871393658,
-          "cy": 3325.493005203772,
-          "width": 753.4858995504875,
-          "height": 562.228973480766,
+          "cx": 4593.736933893658,
+          "cy": 3325.352380203772,
+          "width": 753.6330130456553,
+          "height": 560.8681149695747,
           "opacity": 1,
           "angle": 0,
           "clipped": true,
@@ -409,10 +409,10 @@
       },
       "cameraOffsets": {
         "Artboard": {
-          "deltaX": 144.6275588936578,
-          "deltaY": -96.7257447962279,
-          "widthFactor": 1.8830527381479636,
-          "heightFactor": 6.22106747973185,
+          "deltaX": 144.7134963936578,
+          "deltaY": -96.5069947962279,
+          "widthFactor": 1.8838617675632519,
+          "heightFactor": 6.191024380485129,
           "deltaAngle": 0
         }
       }
@@ -517,10 +517,10 @@
       },
       "cameraStates": {
         "Artboard": {
-          "cx": 4557.932416074036,
-          "cy": 2960.1662608744523,
-          "width": 872.8995280491536,
-          "height": 651.231342470278,
+          "cx": 4557.979291074036,
+          "cy": 2960.0256358744523,
+          "width": 873.088290291217,
+          "height": 649.6550563716294,
           "opacity": 1,
           "angle": 0,
           "clipped": true,
@@ -545,10 +545,10 @@
       },
       "cameraOffsets": {
         "Artboard": {
-          "deltaX": 196.16679107403615,
-          "deltaY": 4.947510874452291,
-          "widthFactor": 2.0134639153444036,
-          "heightFactor": 7.205879308108194,
+          "deltaX": 196.26054107403615,
+          "deltaY": 5.166260874452291,
+          "widthFactor": 2.0143349163171553,
+          "heightFactor": 7.171080304895529,
           "deltaAngle": 0
         }
       }
@@ -676,7 +676,7 @@
   ],
   "elementsToHide": [],
   "selectedFrames": [
-    "frame4417"
+    "frame4412"
   ],
   "selectedLayers": [
     "Artboard",

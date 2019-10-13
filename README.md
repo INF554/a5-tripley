@@ -66,4 +66,8 @@ Team: TripleY
  - w7-9: data visualization
  - w10-12: paper and demo
  - w13-14: video and presentation
+ 
+ ## Contribution(ask for excuse because of GHC)
+ - XinyangZhang: Search for the background of the Youtube video, including the present Infographics Design about Youtube and based on the data to design the poster and infographics. Also to find lots of different graphics demo which aims to find the most appropriate graphs for our project.
+- YuxinLiu: Make the plan of project, including how people are going to work with each other, and what we should do in a period. In order to make the plan more readable, she made it into bar chart. And make the first demo of the presentation html page.
 

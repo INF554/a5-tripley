@@ -1,5 +1,8 @@
 # INF 554 Assignment for 5
 
+## Link of the paper
+- [link of the paper template](https://www.overleaf.com/project/5dc3870a7efc8c0001d3bbbc)
+
 Team: TripleY 
 - Shuting Ye: yeshutin@usc.edu
 - Yuxin Liu: liuyuxin@usc.edu

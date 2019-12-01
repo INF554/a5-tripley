@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<!-- browser-sync start --server --files "*.css,*.html,*.js" --index planets_transition_1.html -->
+
+<head>
+    <script src="node_modules/d3/dist/d3.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="a7.css">
+</head>
+
+<body>
+        <h1 align="center">INF554 Assignment #7</h1>
+        <h3 align="center">Yuxin Liu USCID: 2943825078</h3>
+        <!-- Surround the select box within a "custom-select" DIV element.
+Remember to set the width: -->
+<div class="custom-select" style="width:200px;">
+    <select>
+      <option value="0">Select car:</option>
+      <option value="1">Audi</option>
+      <option value="2">BMW</option>
+      <option value="3">Citroen</option>
+      <option value="4">Ford</option>
+      <option value="5">Honda</option>
+      <option value="6">Jaguar</option>
+      <option value="7">Land Rover</option>
+      <option value="8">Mercedes</option>
+      <option value="9">Mini</option>
+      <option value="10">Nissan</option>
+      <option value="11">Toyota</option>
+      <option value="12">Volvo</option>
+    </select>
+  </div>
+    <p>Order by: <button id="An">Ascending By Name</button>, <button id="Av">Ascending By Value</button>, <button id="Dv">Descending By Value</button>
+    </p>
+    <p>Filter: <button id="all10">All 10</button>, <button id="top5">Top 5</button>, <button id="buttom5">Buttom 5</button>
+    </p>
+    <p><button id="reset">Reset</button></p>
+
+    <div id="chart"></div>
+
+    <script src="a7.js"></script>
+
+</body>
+
+</html>

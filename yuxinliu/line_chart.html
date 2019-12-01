@@ -1,0 +1,442 @@
+<html>
+    <head>
+            
+        <!-- Load d3.js -->
+        <script src="https://d3js.org/d3.v4.js"></script>
+
+        <!-- Initialize a select button -->
+        <select id="selectButton"></select>
+        <!-- Initial a reset button -->
+        <input type="checkbox" id="myCheck">
+
+        <!-- Create a div where the graph will take place -->
+        <div id="my_dataviz"></div>
+
+        <!-- Color Scale -->
+        <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+        <style>
+            .class_rect{
+                fill:white;
+                stroke: grey;
+                stroke-width: 1;
+
+                }
+            .tips_text{
+                font-size: 10px;
+            }
+
+        </style>
+    </head>
+<body>
+      
+    <svg id="line-chart" width="960" height="500"></svg>
+    <script>
+        
+        // set the dimensions and margins of the graph
+        var margin = {top: 10, right: 100, bottom: 30, left: 30},
+        width = 460 - margin.left - margin.right,
+        height = 400 - margin.top - margin.bottom;
+
+        // append the svg object to the body of the page
+        var svg = d3.select("#my_dataviz")
+        .append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+            .attr("transform",
+                "translate(" + margin.left + "," + margin.top + ")")
+            .attr('id','big_g');
+
+        
+
+        //Read the data
+        d3.csv("line_data.csv", function(data) {
+
+        // List of groups (here I have one group per column)
+        var allGroup = ['CA','DE','FR','GB','IN','JP','KR','MX','US']
+        // add the options to the button
+        d3.select("#selectButton")
+            .selectAll('myOptions')
+            .data(allGroup)
+            .enter()
+            .append('option')
+            .text(function (d) { return d; }) // text showed in the menu
+            .attr("value", function (d) { return d; }) // corresponding value returned by the button
+
+        // A color scale: one color for each group
+        var myColor = d3.scaleOrdinal()
+        .domain(allGroup)
+        .range(d3.schemePaired);
+        // console.log(myColor('CA'));
+        var dataNest = d3.nest()
+            .key(function(d) {return d.Country;})
+            .entries(data);
+        console.log(dataNest[0].values);
+        var line = svg
+            .append('g')
+            .append("path")
+            .attr('id','line_path')
+            .datum(dataNest[0].values);
+
+
+
+        function new_line(country){
+            // Add X axis --> it is a date format
+        var x = d3.scaleLinear()
+            .domain([0,7])
+            .range([ 0, width]);
+        svg.append("g")
+            .attr("transform", "translate(0," + height + ")")
+            .attr("id", "x-axis")
+            .call(d3.axisBottom(x).ticks(8));
+        // Add Y axis
+        var idx = allGroup.indexOf(country);
+        var max_v = dataNest[idx].values[0].Max;
+        var y = d3.scaleLinear()
+            .domain( [0,max_v])
+            .range([ height, 0 ]);
+        svg.append("g")
+            .attr("id", "y-axis")
+            .call(d3.axisLeft(y).ticks(8));
+
+        
+
+        // Initialize line with group a
+        d3.select('#line_path')
+            .datum(dataNest[idx].values)
+            .attr("d", d3.line()
+            .x(function(d) { return x(+d.Weekday) })
+            .y(function(d) { return y(+d.Value) })
+            )
+            .attr("stroke", function(d){ return myColor(country) })
+            .style("stroke-width", 4)
+            .style("fill", "none")
+
+        // add valuepoints
+        var points = svg.append("g")
+            .selectAll("circle")
+            .data(dataNest[idx].values)
+            .enter()
+            .append("circle")
+            .attr("cx", d => x(d.Weekday))
+            .attr("cy", d => y(d.Value))
+            .attr("r", 6)
+            .attr("fill", d => myColor(country)) 
+            .attr("fill-opacity", 0)
+            .on("mouseover", function(d) {
+                d3.select(this).attr("fill-opacity", 1);
+        
+                var tag = svg.append('g').classed("tips", true);
+                var border = tag.append('rect')
+                        .attr("x", x(d.Weekday))
+                        .attr("y", y(d.Value))
+                        .attr("height", 30)
+                        .attr("width",70)
+                        .attr("class",'class_rect');
+                var comment = tag.append('text')
+                        .attr("x", x(d.Weekday)+5)
+                        .attr("y", y(d.Value)+10)
+                        .text(d.Country);
+                var comment1 = tag.append('text')
+                        .attr("x", x(d.Weekday)+5)
+                        .attr("y", y(d.Value)+25)
+                        .text(d.Value);
+        
+                })
+            .on("mouseout", function(d) {
+                d3.select(this).attr("fill-opacity", 0);
+                svg.selectAll('.tips').remove();
+     
+        })
+        }
+
+        new_line('CA');
+        
+
+        // A function that update the chart
+        function update(selectedGroup) {
+
+
+            // find select country's idx
+            var idx = allGroup.indexOf(selectedGroup);
+            
+            // Give these new data to update line
+            var max_v = dataNest[idx].values[0].Max;
+
+            var x = d3.scaleLinear()
+            .domain([0,7])
+            .range([ 0, width]);
+
+            var y = d3.scaleLinear()
+                .domain( [0,max_v])
+                .range([ height, 0 ]);
+
+            yAxis = d3.axisLeft()
+                .scale();
+            svg.select("#y-axis")
+                .call(d3.axisLeft(y).ticks(8));
+
+            console.log(dataNest[idx].values)
+
+            d3.select('#line_path')
+                .datum(dataNest[idx].values)
+                .transition()
+                .duration(1000)
+                .attr("d", d3.line()
+                    .x(function(d) { return x(+d.Weekday) })
+                    .y(function(d) { return y(+d.Value) })
+                )
+                .attr("stroke", function(d){ return myColor(selectedGroup) })
+
+            
+            // redraw tooltips and valuepoints
+            var points = svg.append("g")
+            .selectAll("circle")
+            .data(dataNest[idx].values)
+            .enter()
+            .append("circle")
+            .attr("cx", d => x(d.Weekday))
+            .attr("cy", d => y(d.Value))
+            .attr("r", 6)
+            .attr("fill", d => myColor(selectedGroup)) 
+            .attr("fill-opacity", 0)
+            .on("mouseover", function(d) {
+                d3.select(this).attr("fill-opacity", 1);
+        
+                var tag = svg.append('g').classed("tips", true);
+                var border = tag.append('rect')
+                        .attr("x", x(d.Weekday))
+                        .attr("y", y(d.Value))
+                        .attr("height", 30)
+                        .attr("width",70)
+                        .attr("class",'class_rect');
+                var comment = tag.append('text')
+                        .attr("x", x(d.Weekday)+5)
+                        .attr("y", y(d.Value)+10)
+                        .text(d.Country);
+                var comment1 = tag.append('text')
+                        .attr("x", x(d.Weekday)+5)
+                        .attr("y", y(d.Value)+25)
+                        .text(d.Value);
+        
+                })
+            .on("mouseout", function(d) {
+                d3.select(this).attr("fill-opacity", 0);
+                svg.selectAll('.tips').remove();
+     
+        })
+
+            }
+
+            // When the button is changed, run the updateChart function
+            d3.select("#selectButton").on("change", function(d) {
+                svg.selectAll('circle').remove();
+
+
+                // recover the option that has been chosen
+                var selectedOption = d3.select(this).property("value")
+                // run the updateChart function with this selected option
+                update(selectedOption)
+            })
+
+            // d3.select("#reset").on("click", function () {
+            //     svg.selectAll("*").remove();
+            //     // svg.selectAll('path').remove();
+            //     // svg.selectAll('#x-axis').remove();
+            //     // svg.selectAll('#y-axis').remove();
+
+            //     // draw all lines
+            //     // 1. update axis first
+            //     // Add X axis --> it is a date format
+            //     var x = d3.scaleLinear()
+            //         .domain([0,7])
+            //         .range([ 0, width]);
+            //     svg.append("g")
+            //         .attr("transform", "translate(0," + height + ")")
+            //         .attr("id", "x-axis")
+            //         .call(d3.axisBottom(x).ticks(8));
+            //     // Add Y axis
+            //     var y = d3.scaleLinear()
+            //         .domain( [0,70])
+            //         .range([ height, 0 ]);
+            //     svg.append("g")
+            //         .attr("id", "y-axis")
+            //         .call(d3.axisLeft(y).ticks(8));
+
+            //     // 2. draw all lines
+
+            //     var line = d3.line()
+            //     .x(function(d) {
+            //         return x(d.Weekday);
+            //     })
+            //     .y(function(d) {
+            //         return y(d.Value);
+            //     });
+
+            //     var color = d3.schemePaired;
+
+            //     svg.selectAll(".pathline")
+            //     .data(dataNest)
+            //     .enter()
+            //     .append("path")
+            //     .datum(d=>d.values)
+            //     .attr("d", d3.line()
+            //     .x(function(d) { return x(+d.Weekday) })
+            //     .y(function(d) { return y(+d.Value) })
+            //     )
+            //     .attr("stroke", (d,i)=>color[i])
+            //     .style("stroke-width", 4)
+            //     .style("fill", "none")
+                
+
+            //     // add valuepoints
+            //     var pointall = svg
+            //         .selectAll("circle")
+            //         .data(data)
+            //         .enter()
+            //         .append("circle")
+            //         .attr("cx", d => x(d.Weekday))
+            //         .attr("cy", d => y(d.Value))
+            //         .attr("r", 6)
+            //         .attr("fill", d => myColor(d.Country)) 
+            //         .attr("fill-opacity", 0)
+            //         .on("mouseover", function(d) {
+            //             d3.select(this).attr("fill-opacity", 1);
+                
+            //             var tag = svg.append('g').classed("tips", true);
+            //             var border = tag.append('rect')
+            //                     .attr("x", x(d.Weekday))
+            //                     .attr("y", y(d.Value))
+            //                     .attr("height", 30)
+            //                     .attr("width",70)
+            //                     .attr("class",'class_rect');
+            //             var comment = tag.append('text')
+            //                     .attr("x", x(d.Weekday)+5)
+            //                     .attr("y", y(d.Value)+10)
+            //                     .text(d.Country);
+            //             var comment1 = tag.append('text')
+            //                     .attr("x", x(d.Weekday)+5)
+            //                     .attr("y", y(d.Value)+25)
+            //                     .text(d.Value);
+                
+            //             })
+            //         .on("mouseout", function(d) {
+            //             d3.select(this).attr("fill-opacity", 0);
+            //             svg.selectAll('.tips').remove();
+            
+            //     });
+            // })
+            function checkupdate(){
+				if(d3.select("#myCheck").property("checked")){
+					svg.selectAll("*").remove();
+                // svg.selectAll('path').remove();
+                // svg.selectAll('#x-axis').remove();
+                // svg.selectAll('#y-axis').remove();
+
+                // draw all lines
+                // 1. update axis first
+                // Add X axis --> it is a date format
+                var x = d3.scaleLinear()
+                    .domain([0,7])
+                    .range([ 0, width]);
+                svg.append("g")
+                    .attr("transform", "translate(0," + height + ")")
+                    .attr("id", "x-axis")
+                    .call(d3.axisBottom(x).ticks(8));
+                // Add Y axis
+                var y = d3.scaleLinear()
+                    .domain( [0,70])
+                    .range([ height, 0 ]);
+                svg.append("g")
+                    .attr("id", "y-axis")
+                    .call(d3.axisLeft(y).ticks(8));
+
+                // 2. draw all lines
+
+                var line = d3.line()
+                .x(function(d) {
+                    return x(d.Weekday);
+                })
+                .y(function(d) {
+                    return y(d.Value);
+                });
+
+                var color = d3.schemePaired;
+
+                svg.selectAll(".pathline")
+                .data(dataNest)
+                .enter()
+                .append("path")
+                .datum(d=>d.values)
+                .attr("d", d3.line()
+                .x(function(d) { return x(+d.Weekday) })
+                .y(function(d) { return y(+d.Value) })
+                )
+                .attr("stroke", (d,i)=>color[i])
+                .style("stroke-width", 4)
+                .style("fill", "none")
+                
+
+                // add valuepoints
+                var pointall = svg
+                    .selectAll("circle")
+                    .data(data)
+                    .enter()
+                    .append("circle")
+                    .attr("cx", d => x(d.Weekday))
+                    .attr("cy", d => y(d.Value))
+                    .attr("r", 6)
+                    .attr("fill", d => myColor(d.Country)) 
+                    .attr("fill-opacity", 0)
+                    .on("mouseover", function(d) {
+                        d3.select(this).attr("fill-opacity", 1);
+                
+                        var tag = svg.append('g').classed("tips", true);
+                        var border = tag.append('rect')
+                                .attr("x", x(d.Weekday))
+                                .attr("y", y(d.Value))
+                                .attr("height", 30)
+                                .attr("width",70)
+                                .attr("class",'class_rect');
+                        var comment = tag.append('text')
+                                .attr("x", x(d.Weekday)+5)
+                                .attr("y", y(d.Value)+10)
+                                .text(d.Country);
+                        var comment1 = tag.append('text')
+                                .attr("x", x(d.Weekday)+5)
+                                .attr("y", y(d.Value)+25)
+                                .text(d.Value);
+                
+                        })
+                    .on("mouseout", function(d) {
+                        d3.select(this).attr("fill-opacity", 0);
+                        svg.selectAll('.tips').remove();
+            
+                });
+
+				} else {
+
+                    var selectedOption = d3.select('#selectButton').property("value")
+                    console.log(selectedOption);
+                    svg.selectAll("*").remove();
+                    line = svg
+                    .append('g')
+                    .append("path")
+                    .attr('id','line_path')
+                    .datum(dataNest[0].values);
+                    
+                    new_line(selectedOption);
+				}	
+				
+						
+			}
+            d3.select("#myCheck").on("change",checkupdate);
+
+})
+
+
+</script>
+
+     
+    </body>
+</html>

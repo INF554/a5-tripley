@@ -1,0 +1,41 @@
+[{
+        "key": "United States",
+        "value": 0.4
+    },
+    {
+        "key": "Turkey",
+        "value": 0.6
+    },
+    {
+        "key": "France",
+        "value": 0.2
+    },
+    {
+        "key": "Italy",
+        "value": 0.1
+    },
+    {
+        "key": "Spain",
+        "value": 0.3
+    },
+    {
+        "key": "Algeria",
+        "value": 0.9
+    },
+    {
+        "key": "Mexico",
+        "value": 0.4
+    },
+    {
+        "key": "Brazil",
+        "value": 0.3
+    },
+    {
+        "key": "China",
+        "value": 0.1
+    },
+    {
+        "key": "Japan",
+        "value": 0.8
+    }
+]

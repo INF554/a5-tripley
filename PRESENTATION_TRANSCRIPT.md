@@ -25,7 +25,9 @@
 - construct data visualization: 
     - Shuting Ye: 
     - Xinyang Zhang: 
-    - Yuxin Liu: key factors influced time between publishing and trending(Bar Chart, Line Chart) & basic attributes among countries and categories(Tree Map)
+    - Yuxin Liu: 
+        1. Key factors influced time between publishing and trending(Bar Chart, Line Chart) 
+        2. Basic attributes among countries and categories(Tree Map)
 - video, paper and presentation
 
 ## Slide 4.

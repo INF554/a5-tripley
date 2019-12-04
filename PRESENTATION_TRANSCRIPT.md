@@ -79,6 +79,7 @@ This line chart shows average time between publishing and become trending among 
 
 ## Slide 8. Bar chart + Tree Map
 This bar chart shows average time of becomming trending among 5 categories and 9 countries. You can see more information of each bar when you hover on it. You could also use filter to do comparison between categories and countries.
+The treemap show the proportional relationships between different categories of each country base on average basic attributes like comments counts.
 
 ## Slide 9. Relevant Topics
 - Others:

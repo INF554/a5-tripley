@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.0/d3-legend.min.js"></script>
+</head>
+<style>
+    div {
+        display: inline-block;
+    }
+</style>
+
+<body>
+    <div class="Category">
+        <button id="C1" datafilter="Category1">Entertainment</button>
+        <button id="C2" datafilter="Category2">People & Blogs</button>
+        <button id="C3" datafilter="Category3">Music</button>
+        <button id="C4" datafilter="Category4">News & Politics</button>
+        <button id="C5" datafilter="Category5">Comedy</button>
+        <button id="re" datafilter="reset">RESET</button>
+
+    </div>
+    <div>
+        <svg id="cho" width="1300" height="500"></svg>
+        <script type="text/javascript" src="youtube_map.js"></script>
+    </div>
+    <div>
+        <svg id="donut"></svg>
+        <script type="text/javascript" src="donut_chart.js"></script>
+    </div>
+    <div class="big">
+        <script type="text/javascript" src="youtube_map.js"></script>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: Courier;
+    font-size: 12px;
+}
+
+.bar {
+    fill: darkcyan;
+}
+
+text.xlabel {
+    font-family: Courier;
+    font-size: 12px;
+    font-weight: bold;
+    text-anchor: middle;
+}
+
+text.ylabel {
+    font-family: Courier;
+    font-size: 24px;
+    text-anchor: middle;
+    alignment-baseline: central;
+}
+
+text.name {
+    font-family: Courier;
+    font-weight: bold;
+    font-size: 14px;
+    fill: black;
+    /* text-anchor: middle;
+    alignment-baseline: central; */
+}
+.btn {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.Category button{
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:60px;
+    padding-right:60px;
+    font-size: 20px;
+    fill:burlywood;
+    border: 2em;
+    border: 1px solid black;
+    margin-block-start: 0.4em;
+    margin-block-end: 0.4em;
+    margin-inline-start: 0.2px;
+    margin-inline-end: 0.2px;
+
+}
+.Category,.order,.set{
+    padding-left: 40px;
+}
+
+
+.order button{
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:60px;
+    padding-right:60px;
+    font-size: 20px;
+    border: 1px solid black;
+    margin-block-start: 0.4em;
+    margin-block-end: 0.4em;
+    margin-inline-start: 0.2px;
+    margin-inline-end: 0.2px;
+
+}
+.set button{
+    padding-top:15px;
+    padding-bottom:15px;
+    padding-left:60px;
+    padding-right:60px;
+    font-size: 20px;
+    color:white;
+    border: 2em;
+    border: 1px solid lightyellow;
+  
+}
+.head{padding-left: 20px;}
+.line11{padding-left: 50px;}
+
+p{font-size: 30px;}

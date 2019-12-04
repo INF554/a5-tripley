@@ -14,7 +14,7 @@
 ### PROJECT ARTIFACTS
 ​
 - [Demonstration URL](<demo-url>)
-- [Presentation PDF](https://github.com/INF554/a5-tripley/blob/master/INF554_Final_presentation.pdf) and [transcript](https://github.com/INF554/a5-tripley/blob/master/PRESENTATION_TRANSCRIPT.md) [Presentation_ Sozi](https://github.com/INF554/a5-tripley/blob/master/INF554_final.sozi.html)
+- [Presentation PDF](https://github.com/INF554/a5-tripley/blob/master/INF554_Final_presentation.pdf)， [transcript](https://github.com/INF554/a5-tripley/blob/master/PRESENTATION_TRANSCRIPT.md) and[Presentation_ Sozi](https://github.com/INF554/a5-tripley/blob/master/INF554_final.sozi.html)
 - [Article](https://github.com/INF554/a5-tripley/blob/master/INF554_FinalPaper_TripleY_Strategy_behind_the_trending_youtube_video.pdf) and [Overleaf URL](https://www.overleaf.com/read/vbjtmrybxsxc)
 - [YouTube video](<youtube-video-url>)
 ​

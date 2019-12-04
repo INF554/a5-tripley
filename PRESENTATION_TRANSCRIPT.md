@@ -28,7 +28,11 @@
     - Yuxin Liu: 
         1. Key factors influced time between publishing and trending(Bar Chart, Line Chart) 
         2. Basic attributes among countries and categories(Tree Map)
-- video, paper and presentation
+- video, paper and presentation:
+    - Shuting Ye: Website construction
+    - Xinyang Zhang: Paper
+    - Yuxin Liu: Presentation & Video
+
 
 ## Slide 4.
 - Data: The dataset we used is from [Kaggle](https://www.kaggle.com/datasnaek/youtube-new) and it contains following attributes of 9 countries:
@@ -48,7 +52,8 @@
     - ratings_disabled
     - video_error_or_removed
     - description
-- Topic: We used part of those attributes to extract useful information for our project. e.g. We splits tags from "tags" attribute and filtered with stop words of different languages. We calculate the time between publishing and trending to explore factors influced that.
+- Topic: 
+    We used part of those attributes to extract useful information for our project. e.g. We splits tags from "tags" attribute and filtered with stop words of different languages. We calculate the time between publishing and trending to explore factors influced that.
 
 
 

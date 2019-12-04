@@ -10,7 +10,7 @@
 - Group name: TripleY
 - names and emails 
 
-## Slide 1 Target People & Topics. 
+## Slide 1. Target People & Topics. 
 - Our visualization project is about finding the strategy behind trending Youtube videos. 
 - It is addressed to Youtubers and Youtube audiences.
 - We discover the insights and pattern of this dataset and want people to get inspirations from our work.

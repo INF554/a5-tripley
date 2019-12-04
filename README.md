@@ -14,28 +14,28 @@
 ### PROJECT ARTIFACTS
 ​
 - [Demonstration URL](<demo-url>)
-- [Presentation PDF](<presentation-pdf-url>) and [transcript](https://github.com/INF554/a5-tripley/blob/master/PRESENTATION_TRANSCRIPT.md) [Presentation_ Sozi](https://github.com/INF554/a5-tripley/blob/master/INF554_final.sozi.html)
+- [Presentation PDF](https://github.com/INF554/a5-tripley/blob/master/INF554_Final_presentation.pdf) and [transcript](https://github.com/INF554/a5-tripley/blob/master/PRESENTATION_TRANSCRIPT.md) [Presentation_ Sozi](https://github.com/INF554/a5-tripley/blob/master/INF554_final.sozi.html)
 - [Article](https://github.com/INF554/a5-tripley/blob/master/INF554_FinalPaper_TripleY_Strategy_behind_the_trending_youtube_video.pdf) and [Overleaf URL](https://www.overleaf.com/read/vbjtmrybxsxc)
 - [YouTube video](<youtube-video-url>)
 ​
 ### PROJECT CONTRIBUTIONS
 ​
-- Demonstration: [ Shuting Ye: yeshutin@usc.edu  Yuxin Liu: liuyuxin@usc.edu  Xinyang Zhang: xinyangz@usc.edu]
-- Presentation: [Shuting Ye: yeshutin@usc.edu  Yuxin Liu: liuyuxin@usc.edu  Xinyang Zhang: xinyangz@usc.edu]
-- Transcript: [Yuxin Liu: liuyuxin@usc.edu  Xinyang Zhang: xinyangz@usc.edu]
-- Paper: [Xinyang Zhang: xinyangz@usc.edu]
-- YouTube video: [Yuxin Liu: liuyuxin@usc.edu]
+- Demonstration: Shuting Ye: yeshutin@usc.edu  Yuxin Liu: liuyuxin@usc.edu  Xinyang Zhang: xinyangz@usc.edu
+- Presentation: Shuting Ye: yeshutin@usc.edu  Yuxin Liu: liuyuxin@usc.edu  Xinyang Zhang: xinyangz@usc.edu
+- Transcript: Yuxin Liu: liuyuxin@usc.edu  Xinyang Zhang: xinyangz@usc.edu
+- Paper: Xinyang Zhang: xinyangz@usc.edu
+- YouTube video: Yuxin Liu: liuyuxin@usc.edu
 ​
-- Web site: [Shuting Ye: yeshutin@usc.edu]
-- <Popularty of each category worldwide - Barchart & Word Cloud>: [Shuting Ye: yeshutin@usc.edu]
-- <Best weekday to publish a YouTube video in order of time - Lolipop Chart>: [Shuting Ye: yeshutin@usc.edu]
-- <Best hour to publish a YouTube video in order of decending value - Lolipop Chart>: [Shuting Ye: yeshutin@usc.edu]
-- <YouTube category temperature in 9 countries - Word map>: [Xinyang Zhang: xinyangz@usc.edu]
-- <Distribution of global top 5 categories in 9 countries - Donut Chart>: [Xinyang Zhang: xinyangz@usc.edu]
-- <Distribution of global top 5 categories in each country - Donut Chart>: [Xinyang Zhang: xinyangz@usc.edu]
-- <How long will it take to becoming trending - Bar Chart>: [Yuxin Liu: liuyuxin@usc.edu]
-- <Which weekday accelerate the trending speed of YouTube videos most - Line Chart>: [Yuxin Liu: liuyuxin@usc.edu]
-- <Basic attributes among countries and categories - Treemaps>: [Yuxin Liu: liuyuxin@usc.edu]
+- Web site: Shuting Ye: yeshutin@usc.edu
+- Popularty of each category worldwide - Barchart & Word Cloud: Shuting Ye: yeshutin@usc.edu
+- Best weekday to publish a YouTube video in order of time - Lolipop Chart: Shuting Ye: yeshutin@usc.edu
+- Best hour to publish a YouTube video in order of decending value - Lolipop Chart: Shuting Ye: yeshutin@usc.edu
+- YouTube category temperature in 9 countries - Word map: Xinyang Zhang: xinyangz@usc.edu
+- Distribution of global top 5 categories in 9 countries - Donut Chart: Xinyang Zhang: xinyangz@usc.edu
+- Distribution of global top 5 categories in each country - Donut Chart: Xinyang Zhang: xinyangz@usc.edu
+- How long will it take to becoming trending - Bar Chart: Yuxin Liu: liuyuxin@usc.edu
+- Which weekday accelerate the trending speed of YouTube videos most - Line Chart: Yuxin Liu: liuyuxin@usc.edu
+- Basic attributes among countries and categories - Treemaps: Yuxin Liu: liuyuxin@usc.edu
 
 
 

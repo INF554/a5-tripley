@@ -23,14 +23,14 @@ In the project, we find the best time for publishing, the average time for becom
 ​
 - Demonstration: Shuting Ye: yeshutin@usc.edu  Yuxin Liu: liuyuxin@usc.edu  Xinyang Zhang: xinyangz@usc.edu
 - Presentation: Shuting Ye: yeshutin@usc.edu  Yuxin Liu: liuyuxin@usc.edu  Xinyang Zhang: xinyangz@usc.edu
-- Transcript: Yuxin Liu: liuyuxin@usc.edu  Xinyang Zhang: xinyangz@usc.edu
+- Transcript: Yuxin Liu: liuyuxin@usc.edu  Xinyang Zhang: xinyangz@usc.edu Shuting Ye: yeshutin@usc.edu  
 - Paper: Xinyang Zhang: xinyangz@usc.edu
 - YouTube video: Yuxin Liu: liuyuxin@usc.edu
 ​
 - Web site: Shuting Ye: yeshutin@usc.edu
 - Popularty of each category worldwide - Barchart & Word Cloud: Shuting Ye: yeshutin@usc.edu
-- Best weekday to publish a YouTube video in order of time - Lolipop Chart: Shuting Ye: yeshutin@usc.edu
-- Best hour to publish a YouTube video in order of decending value - Lolipop Chart: Shuting Ye: yeshutin@usc.edu
+- Best weekday and hour to publish a YouTube video - Lolipop Chart: Shuting Ye: yeshutin@usc.edu
+- Relationship between video's views, likes and dislikes - Bubble Chart: Shuting Ye: yeshutin@usc.edu
 - YouTube category temperature in 9 countries - Word map: Xinyang Zhang: xinyangz@usc.edu
 - Distribution of global top 5 categories in 9 countries - Donut Chart: Xinyang Zhang: xinyangz@usc.edu
 - Distribution of global top 5 categories in each country - Donut Chart: Xinyang Zhang: xinyangz@usc.edu

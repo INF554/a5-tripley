@@ -26,8 +26,9 @@
     - Shuting Ye: 
         1. Explore the most popular categories and tags(Bar chart and Wordcloud)
         2. The best time(weekdays or hours) to publish a Youtube video(Lollipop chart)
+        3. The relationship among vidoe's views, likes and dislikes(Bubble chart)
     - Xinyang Zhang: 
-        1. Category temperature(World Map) 
+        1. Category temperature(World Map) 
         2. Each country's top 5 categories and worldwide top 5 categories' distribution(Donut chart)
     - Yuxin Liu: 
         1. Key factors influced time between publishing and trending(Bar Chart, Line Chart) 
@@ -60,11 +61,12 @@
     We used part of those attributes to extract useful information for our project. e.g. We splits tags from "tags" attribute and filtered with stop words of different languages. We calculate the time between publishing and trending to explore factors influced that.
 
 ## Slide 4. Bar Chart + Word Cloud
-This bar chart shows the popularity of each categories in world wide. When you click on each bar, word cloud will change along with the category you chose.
-We split tags into single phrases and filter with stop words. The animition of this chart is expanding from the most frequent tags to the less frequent tags and shaped in YouTube logo.
+This bar chart shows the popularity of each categories in worldwide. When you click on each bar, the word cloud will change along with the category you chose.
+The whole wordcloud is shaped like a "play" button to reflect its context. And the 10 most frequent appeared tags are highlighted using bold font and bright color.
 
-## Slide 5. Lolipop Chart
-Lolipop chart shows the number of trending videos among weekdays or hours of publishing time. Buttons to show different kinds of sorting are available. The graph would show in the fluent transition.
+## Slide 5. Lolipop Chart + Bubble Chart
+Lolipop chart shows the best time to publish a Youtube vidoe to make it more likely to be a trend. The result can be displayed in days or hours with fluent transition. 
+The bubble chart shows the relationship among video's views, likes and dislikes. The color indicates the category which the video belongs to.
 
 ## Slide 6. World Map + Donut Charts
 The world map shows the worldwide top5 categories' popularity in different shades of colors. If the shade is darker which means people in this country like this category more. You could click buttons to choose different categories.
@@ -98,8 +100,8 @@ We add hover tooltips to each tag and make them as YouTube Shape. Another tag wo
     - Seaborn, Matplotlib
 - d3:
     - d3 map *1
-    - responsive d3 charts *5
-    - interactive d3 charts *5
+    - responsive d3 charts *6
+    - interactive d3 charts *6
     - d3 animated transitions *3
 - Tableau:
     - Tree Map

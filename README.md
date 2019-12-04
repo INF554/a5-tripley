@@ -1,6 +1,7 @@
 # INF 554 Project - Strategy behind trending Youtube videos
 
 ## PROJECT SUMMARY
+In the project, we find the best time for publishing, the average time for becoming trending, different country’s preferences for categories, the performance for same categories in different countries and some detail statistics includes like, dislike, views, comment count infographics. Above information would inspire user to customize their video in a more efficient way.
 ​
 ### PROJECT INFORMATION
 ​

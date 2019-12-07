@@ -104,6 +104,7 @@ We add hover tooltips to each tag and make them as YouTube Shape. Another tag wo
     - responsive d3 charts *6
     - interactive d3 charts *6
     - d3 animated transitions *3
+    - d3 layout *2
 - Tableau:
     - Tree Map
     - Bar Chart

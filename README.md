@@ -12,15 +12,16 @@ In the project, we find the best time for publishing, the average time for becom
  - Yuxin Liu: liuyuxin@usc.edu
  - Xinyang Zhang: xinyangz@usc.edu
 ​
+
 ### PROJECT ARTIFACTS
 ​
-- [Demonstration URL]
-    - deployed on pdms(http://pdms.usc.edu/~yeshutin/trendingyoutube/)
-    - deployed on github pages(https://tristaaa.github.io/trendyou/)
+- [Demonstration URL on pdms](http://pdms.usc.edu/~yeshutin/trendingyoutube/)
+    - This website is also deployed on [github pages](https://tristaaa.github.io/trendyou/)
 - [Presentation PDF](http://pdms.usc.edu/~liuyuxin/project/INF554_Final_presentation.pdf), [Transcript](https://github.com/INF554/a5-tripley/blob/master/PRESENTATION_TRANSCRIPT.md) and[Presentation_ Sozi](http://pdms.usc.edu/~liuyuxin/project/INF554-presentation.sozi.html#frame9495)
 - [Article](https://github.com/INF554/a5-tripley/blob/master/INF554_FinalPaper_TripleY_Strategy_behind_the_trending_youtube_video.pdf) and [Overleaf URL](https://www.overleaf.com/read/vbjtmrybxsxc)
 - [YouTube video](<youtube-video-url>)
 ​
+
 ### PROJECT CONTRIBUTIONS
 ​
 - Demonstration: Shuting Ye: yeshutin@usc.edu  Yuxin Liu: liuyuxin@usc.edu  Xinyang Zhang: xinyangz@usc.edu
